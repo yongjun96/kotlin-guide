@@ -1,7 +1,5 @@
 package com.lannstark.lec02;
 
-import org.jetbrains.annotations.Nullable;
-
 public class Person {
 
   private final String name;
@@ -13,7 +11,6 @@ public class Person {
   public String getName() {
     return name;
   }
-
 }
 
 
