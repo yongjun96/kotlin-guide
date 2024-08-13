@@ -50,6 +50,7 @@ fun printNameAndGender(name: String, gender: String){
     println("성별 : $gender")
 }
 
+// 같은 타입의 parameter 여러개 불러 오는 경우
 fun printAll(vararg strings: String){
     for(str in strings){
         println(str)
