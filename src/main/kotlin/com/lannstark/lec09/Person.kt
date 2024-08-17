@@ -23,7 +23,14 @@ fun main(){
 class Person (
     val name: String,
     var age: Int
-)
+){
+    // class(생성되는 시점) 가 초기화 되는 시점에 한번 호출되는 블럭
+    init {
+        if( age <= 0){
+            throw IllegalArgumentException("나이는 ${age}일 수 없습니다");
+        }
+    }
+}
 
     // {} -> body 또한 존재 하지 않는 다면 생략 가능
     // 프로퍼티 : field + getter + setter
