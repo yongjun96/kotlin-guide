@@ -84,7 +84,8 @@ class Person (
     val isAdultV2: Boolean
         get() = this.age >= 20
 
-    // (custom getter)프로퍼티
+    // custom getter
+    // V2와 다른 방식으로 return 을 사용하며 {} 사용
     val isAdultV3: Boolean
         get() {
             return age >= 20
