@@ -1,10 +1,7 @@
 package com.lannstark.lec10
 
-abstract class Animal (
-    protected val species: String,
-    protected val legCount: Int,
-){
+fun main() {
 
-    abstract fun move()
+    Derived(1)
 
 }
