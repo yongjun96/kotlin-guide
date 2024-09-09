@@ -2,9 +2,7 @@ package com.lannstark.lec14;
 
 public enum JavaCountry {
 
-  KOREA("KO"),
-  AMERICA("US"),
-  ;
+  KOREA("KO"), AMERICA("US");
 
   private final String code;
 
