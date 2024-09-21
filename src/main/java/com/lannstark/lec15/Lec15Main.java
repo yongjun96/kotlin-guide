@@ -1,7 +1,9 @@
 package com.lannstark.lec15;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Lec15Main {
 
@@ -33,7 +35,30 @@ public class Lec15Main {
 
     //-----------------------------------------------------------------------------------------
 
-    // Set
+    // Map
+
+    // JDK 8까지
+    Map<Integer, String> map = new HashMap<>();
+    map.put(1, "MONDAY");
+    map.put(2, "TUESDAY");
+
+    // JDK 9부터
+    Map.of(3, "WEDNESDAY", 4, "THURSDAY");
+
+
+    // Map 활용
+    for(int key : map.keySet()){
+      System.out.println(key);
+      System.out.println(map.get(key));
+    }
+
+    for(Map.Entry<Integer, String> entry : map.entrySet()){
+      System.out.println(entry.getKey());
+      System.out.println(entry.getValue());
+    }
+
+    //-----------------------------------------------------------------------------------------
+
 
 
   }

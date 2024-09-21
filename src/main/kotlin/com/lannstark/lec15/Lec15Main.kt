@@ -67,6 +67,37 @@ fun main(){
     // 기본 구현체는 LinkedHashSet
     val setNumbersV2 = mutableSetOf(400, 600)
 
+    //-----------------------------------------------------------------------------------------
+
+    // Map
+
+    val oldMap = mutableMapOf<Int, String>()
+
+    oldMap[1] = "MONDAY"
+    oldMap[2] = "TUESDAY"
+
+    // mapOf 를 사용하는 경우는 key, value 사이에 to 를 넣어야 한다.
+    mapOf(3 to "WEDNESDAY", 4 to "THURSDAY")
+
+    // Map 활용
+
+    for (key in oldMap.keys) {
+        println(key)
+        println(oldMap[key])
+    }
+
+    for ((key, value) in oldMap.entries) {
+        println(key)
+        println(value)
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+
+
+
+
+
 }
 
 private fun printNumbers(numbers: List<Int>){
